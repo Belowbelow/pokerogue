@@ -1128,8 +1128,8 @@ export default abstract class Pokemon extends Phaser.GameObjects.Container {
     if (thresholdOverride === undefined) {
       if (!this.hasTrainer()) {
         if (new Date() < new Date(Date.UTC(2024, 6, 22, 0)))
-          shinyThreshold.value *= 3;
-        shinyThreshold.value *= 3;
+          shinyThreshold.value *= 4;
+        shinyThreshold.value *= 4;
         this.scene.applyModifiers(ShinyRateBoosterModifier, true, shinyThreshold);
       }
     } else
